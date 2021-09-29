@@ -18,9 +18,11 @@ class View
 		\Magento\Catalog\Controller\Product\View\Interceptor $subject,
 		\Closure $proceed
 	) {
+		/*
 		if (!$this->customerSession->isLoggedIn()) {
 			return $this->redirectFactory->create()->setPath('customer/account/login');
 		}
+		*/
 		return $proceed();
 	}
 }
